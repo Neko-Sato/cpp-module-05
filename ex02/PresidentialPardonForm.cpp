@@ -6,14 +6,16 @@
 /*   By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 09:24:35 by hshimizu          #+#    #+#             */
-/*   Updated: 2024/08/20 09:49:25 by hshimizu         ###   ########.fr       */
+/*   Updated: 2024/08/20 11:04:53 by hshimizu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PresidentialPardonForm.hpp"
 
+const std::string PresidentialPardonForm::name = "presidential pardon";
+
 PresidentialPardonForm::PresidentialPardonForm(const std::string &target)
-    : AForm("PresidentialPardonForm", 25, 5), _target(target) {
+    : AForm(name, 25, 5), _target(target) {
 }
 
 PresidentialPardonForm::~PresidentialPardonForm() {

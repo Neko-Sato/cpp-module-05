@@ -6,7 +6,7 @@
 /*   By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 09:09:09 by hshimizu          #+#    #+#             */
-/*   Updated: 2024/08/20 10:17:40 by hshimizu         ###   ########.fr       */
+/*   Updated: 2024/08/20 11:04:45 by hshimizu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 #include <cstdlib>
 #include <ctime>
 
+const std::string RobotomyRequestForm::name = "robotomy request";
+
 RobotomyRequestForm::RobotomyRequestForm(const std::string &target)
-    : AForm("RobotomyRequestForm", 72, 45), _target(target) {
+    : AForm(name, 72, 45), _target(target) {
 }
 
 RobotomyRequestForm::~RobotomyRequestForm() {

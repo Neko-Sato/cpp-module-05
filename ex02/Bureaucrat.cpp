@@ -6,7 +6,7 @@
 /*   By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 06:02:00 by hshimizu          #+#    #+#             */
-/*   Updated: 2024/08/20 09:29:17 by hshimizu         ###   ########.fr       */
+/*   Updated: 2024/08/20 10:41:30 by hshimizu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ void Bureaucrat::signForm(AForm &form) {
   }
 }
 
-void Bureaucrat::executeForm(AForm const &form) {
+void Bureaucrat::executeForm(const AForm &form) {
   try {
     form.execute(*this);
     std::cout << _name << " executed " << form.getName() << std::endl;

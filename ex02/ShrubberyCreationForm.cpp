@@ -6,7 +6,7 @@
 /*   By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 08:43:42 by hshimizu          #+#    #+#             */
-/*   Updated: 2024/08/20 09:49:46 by hshimizu         ###   ########.fr       */
+/*   Updated: 2024/08/20 11:04:41 by hshimizu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 #include <fstream>
 #include <ostream>
 
+const std::string ShrubberyCreationForm::name = "shrubbery creation";
+
 ShrubberyCreationForm::ShrubberyCreationForm(const std::string &target)
-    : AForm("ShrubberyCreationForm", 145, 137), _target(target) {
+    : AForm(name, 145, 137), _target(target) {
 }
 
 ShrubberyCreationForm::~ShrubberyCreationForm() {
