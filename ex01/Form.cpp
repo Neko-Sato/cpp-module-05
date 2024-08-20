@@ -6,7 +6,7 @@
 /*   By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 07:51:49 by hshimizu          #+#    #+#             */
-/*   Updated: 2024/08/19 08:35:25 by hshimizu         ###   ########.fr       */
+/*   Updated: 2024/08/20 09:56:26 by hshimizu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int Form::getGradeToExecute() const {
 }
 
 void Form::beSigned(const Bureaucrat &bureaucrat) {
-  if (bureaucrat.getGrade() < _gradeToSign)
+  if (bureaucrat.getGrade() > _gradeToSign)
     throw GradeTooHighException();
   _isSigned = true;
 }
