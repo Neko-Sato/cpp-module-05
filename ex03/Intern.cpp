@@ -46,6 +46,11 @@ AForm *Intern::makeForm(const std::string &formName,
   while (i < size && *forms[i].name != formName)
     i++;
   if (i == size)
+  {
+    std::cout << "Nothing could be done for the interns...." << std::endl;
     return (NULL);
-  return (forms[i].create(target));
+  }
+  AForm *form = forms[i].create(target);
+  std::cout << "Intern creates " << form->getName() << std::endl;
+  return (form);
 };
